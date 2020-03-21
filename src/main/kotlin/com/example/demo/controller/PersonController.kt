@@ -18,7 +18,7 @@ class PersonController (
 ) {
 
     @GetMapping("/person")
-    fun getUsers(): List<Person> = listOf(Person("pepe"))
+    fun getUsers(): List<Person> = repository.findAll().toList()
 
     @GetMapping("person/{userId}")
     fun getJournalById(@PathVariable userId : Long) : ResponseEntity<Person> {
