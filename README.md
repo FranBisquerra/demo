@@ -2,7 +2,9 @@
 para mi amigo lluc 
 
 compilar y empaquetar ./gradlew build -x test 
+
 el .jar esta en /build/libs/*.jar
+
 correr la app: java -jar -Dspring.profiles.active=pro demo-0.0.1-SNAPSHOT.jar
 
 Esto tiene:
