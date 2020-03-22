@@ -3,3 +3,15 @@ security:
     client:
       client-id: pepe
       client-secret: pepe
+
+#spring:
+#  profiles:
+#    active: dev, pro, it
+
+spring:
+  security:
+    user:
+      password: pwd
+
+  profiles:
+    active: dev

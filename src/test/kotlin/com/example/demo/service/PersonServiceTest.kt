@@ -13,7 +13,6 @@ import org.mockito.Mockito.`when` as When
 
 class PersonServiceTest {
 
-    @Mock
     private val personRepository = mock(PersonRepository::class.java)
 
     @InjectMocks
