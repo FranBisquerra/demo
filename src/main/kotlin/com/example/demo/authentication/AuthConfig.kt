@@ -7,6 +7,5 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 
 @Profile("dev", "pro")
 @EnableAuthorizationServer
-@EnableResourceServer
 @Configuration
 class AuthConfig

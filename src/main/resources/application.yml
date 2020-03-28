@@ -9,9 +9,5 @@ security:
 #    active: dev, pro, it
 
 spring:
-  security:
-    user:
-      password: pwd
-
   profiles:
     active: dev
