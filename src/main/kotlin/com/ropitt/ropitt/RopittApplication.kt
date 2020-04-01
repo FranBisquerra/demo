@@ -1,7 +1,7 @@
-package com.example.demo
+package com.ropitt.ropitt
 
-import com.example.demo.entity.Person
-import com.example.demo.repository.PersonRepository
+import com.ropitt.ropitt.entity.Person
+import com.ropitt.ropitt.repository.PersonRepository
 import org.springframework.boot.CommandLineRunner
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
@@ -9,7 +9,7 @@ import org.springframework.boot.runApplication
 import org.springframework.context.annotation.Bean
 
 @SpringBootApplication(exclude = [SecurityAutoConfiguration::class])
-class DemoApplication {
+class RopittApplication {
 
 	@Bean
 	fun init(repository: PersonRepository) = CommandLineRunner {
@@ -24,5 +24,5 @@ class DemoApplication {
 }
 
 fun main(args: Array<String>) {
-	runApplication<DemoApplication>(*args)
+	runApplication<RopittApplication>(*args)
 }
