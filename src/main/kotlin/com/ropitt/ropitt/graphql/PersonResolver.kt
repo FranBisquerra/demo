@@ -1,8 +1,8 @@
-package com.example.demo.graphql
+package com.ropitt.ropitt.graphql
 
 import com.coxautodev.graphql.tools.GraphQLQueryResolver
-import com.example.demo.entity.Person
-import com.example.demo.service.PersonService
+import com.ropitt.ropitt.entity.Person
+import com.ropitt.ropitt.service.PersonService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Component
 

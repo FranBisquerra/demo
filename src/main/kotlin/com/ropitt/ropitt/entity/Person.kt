@@ -1,4 +1,4 @@
-package com.example.demo.entity
+package com.ropitt.ropitt.entity
 
 import javax.persistence.*
 

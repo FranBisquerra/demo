@@ -1,6 +1,6 @@
-package com.example.demo.repository
+package com.ropitt.ropitt.repository
 
-import com.example.demo.entity.Person
+import com.ropitt.ropitt.entity.Person
 import org.springframework.data.repository.CrudRepository
 import org.springframework.stereotype.Repository
 

@@ -1,12 +1,11 @@
-package com.example.demo.service
+package com.ropitt.ropitt.service
 
-import com.example.demo.entity.Person
-import com.example.demo.repository.PersonRepository
+import com.ropitt.ropitt.entity.Person
+import com.ropitt.ropitt.repository.PersonRepository
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 import org.mockito.ArgumentMatchers
 import org.mockito.InjectMocks
-import org.mockito.Mock
 import org.mockito.Mockito.mock
 import java.util.*
 import org.mockito.Mockito.`when` as When

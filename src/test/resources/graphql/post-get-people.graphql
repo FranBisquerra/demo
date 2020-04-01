@@ -1,3 +1,5 @@
-query people($count: Int) {
-    name
+query {
+    people(count: 1) {
+        name
+    }
 }

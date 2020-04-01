@@ -1,20 +1,17 @@
-package com.example.demo.it
+package com.ropitt.ropitt.it
 
-import com.example.demo.DemoApplication
-import com.example.demo.entity.Person
-import com.example.demo.repository.PersonRepository
+import com.ropitt.ropitt.repository.PersonRepository
 import org.junit.jupiter.api.Test
 import org.mockito.Mockito.`when`
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.boot.test.mock.mockito.MockBean
 import org.springframework.boot.test.web.client.TestRestTemplate
-import org.springframework.boot.test.web.client.getForEntity
 import org.springframework.boot.web.server.LocalServerPort
 import org.springframework.test.context.ActiveProfiles
 
 
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, classes = [DemoApplication::class])
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ActiveProfiles("it")
 class PersonIT {
 
@@ -32,10 +29,5 @@ class PersonIT {
     fun `get all users`() {
         `when`(personRepository.findAll()).thenReturn(listOf())
 
-        val people = restTemplate
-                .withBasicAuth("user", "pwd")
-                .getForEntity<List<Person>>("$baseUrl$port/api/person")
-
-        print(people)
     }
 }

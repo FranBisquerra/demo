@@ -1,4 +1,4 @@
-package com.example.demo.authentication
+package com.ropitt.ropitt.authentication
 
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Profile

@@ -1,7 +1,7 @@
-package com.example.demo.service
+package com.ropitt.ropitt.service
 
-import com.example.demo.entity.Person
-import com.example.demo.repository.PersonRepository
+import com.ropitt.ropitt.entity.Person
+import com.ropitt.ropitt.repository.PersonRepository
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 
